@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="site__title">Pizza order</h1>
+        <form action="pizza">
+            <label for="input">
+                <input class="personals" type="text" required placeholder="User number">
+            </label>
+            <label for="input">
+                <input class="personals" type="number" required placeholder="Phone number">
+            </label>
+            <label for="input">
+                <input class="personals" type="email" required placeholder="User mail">
+            </label>
+        </form>
+            <strong class="Dought">Dough thickness:</strong>
+        <select name="dought" id="size">
+            <option value="">small</option>
+            <option value="">medium</option>
+            <option value="">thin</option>
+            <option value="">big</option>
+        </select>
+        <div class="hero">
+            <strong>Size:</strong>
+            <label for="size">
+                <input id="size" type="radio" name="size">
+                <span>25sm</span>
+            </label>
+            <label for="size">
+                <input id="size" type="radio" name="size">
+                <span>30sm</span>
+            </label>
+            <label for="size">
+                <input id="size" type="radio" name="size">
+                <span>35sm</span>
+            </label>
+        </div>2
+        <strong>On pizza:</strong>
+        <div class="on__pizza">
+            <div class="on">
+                <div class="additives">
+                    <input type="checkbox" name="Tomato">
+                    <label for="Tomato">Tomato</label>
+                </div>
+                <div class="additives">
+                    <input type="checkbox" name="Turkey_meat">
+                    <label for="Turkey_meat">Turkey meat</label>
+                </div>
+                <div class="additives">
+                    <input type="checkbox" name="Olive">
+                    <label for="Olive">Olive</label>
+                </div>
+            </div>
+            <div class="onn">
+                <div class="additives">
+                    <input type="checkbox" name="Picked">
+                    <label for="Picked">Picked</label>
+                </div>
+                <div class="additives">
+                    <input type="checkbox" name="Mashroom">
+                    <label for="Mashroom">Mashroom</label>
+                </div>
+                <div class="additives">
+                    <input type="checkbox" name="Hourse_meat">
+                    <label for="Hourse_meat">Hourse meat</label>
+                </div>
+            </div>
+        </div>
+        <strong class="Add__title">Add:</strong>
+        <div class="add">
+            <input type="checkbox" name="Tomato">
+            <label class="g" for="pepper">pepper</label>
+            <input type="checkbox" name="sausages">
+            <label for="sausages">sausages</label>
+        </div>
+        <button>Save</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
