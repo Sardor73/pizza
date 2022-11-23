@@ -12,78 +12,91 @@
 <body>
     <div class="container">
         <h1 class="site__title">Pizza order</h1>
-        <form action="pizza">
-            <label for="input">
-                <input class="personals" type="text" required placeholder="User number">
-            </label>
-            <label for="input">
-                <input class="personals" type="number" required placeholder="Phone number">
-            </label>
-            <label for="input">
-                <input class="personals" type="email" required placeholder="User mail">
-            </label>
+        <form action="form">
+            <input class="personals" type="text" required placeholder="User number" id="name">
+            
+            <input class="personals" type="number" required placeholder="Phone number" id="number">
+            
+            <input class="personals" type="email" required placeholder="User mail" id="email">
         </form>
             <strong class="Dought">Dough thickness:</strong>
-        <select name="dought" id="size">
-            <option value="">small</option>
-            <option value="">medium</option>
-            <option value="">thin</option>
-            <option value="">big</option>
+        <select name="dought" id="select">
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="big">big</option>
         </select>
         <div class="hero">
             <strong>Size:</strong>
-            <label for="size">
-                <input id="size" type="radio" name="size">
+            <label for="small-size">
+                <input id="small-size" type="radio" value="25sm" name="size" class="size">
                 <span>25sm</span>
             </label>
-            <label for="size">
-                <input id="size" type="radio" name="size">
+            <label for="madium-size">
+                <input id="medium-size" type="radio" value="30sm" name="size" class="size">
                 <span>30sm</span>
             </label>
-            <label for="size">
-                <input id="size" type="radio" name="size">
+            <label for="big-size">
+                <input id="big-size" type="radio" value="35sm" name="size" class="size">
                 <span>35sm</span>
             </label>
         </div>2
         <strong>On pizza:</strong>
         <div class="on__pizza">
             <div class="on">
-                <div class="additives">
-                    <input type="checkbox" name="Tomato">
-                    <label for="Tomato">Tomato</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Tomato" id="tomato" class="additives">
+                    <label for="tomato">Tomato</label>
                 </div>
-                <div class="additives">
-                    <input type="checkbox" name="Turkey_meat">
-                    <label for="Turkey_meat">Turkey meat</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Turkey meat" id="turkey_meat" class="additives">
+                    <label for="turkey_meat">Turkey meat</label>
                 </div>
-                <div class="additives">
-                    <input type="checkbox" name="Olive">
-                    <label for="Olive">Olive</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Olive" id="olive" class="additives">
+                    <label for="olive">Olive</label>
                 </div>
             </div>
             <div class="onn">
-                <div class="additives">
-                    <input type="checkbox" name="Picked">
-                    <label for="Picked">Picked</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Picked" id="picked" class="additives">
+                    <label for="picked">Picked</label>
                 </div>
-                <div class="additives">
-                    <input type="checkbox" name="Mashroom">
-                    <label for="Mashroom">Mashroom</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Mashroom" id="mashroom" class="additives">
+                    <label for="mashroom">Mashroom</label>
                 </div>
-                <div class="additives">
-                    <input type="checkbox" name="Hourse_meat">
-                    <label for="Hourse_meat">Hourse meat</label>
+                <div class="additivesBox">
+                    <input type="checkbox" name="Hourse meat" id="hourse_meat" class="additives">
+                    <label for="hourse_meat">Hourse meat</label>
                 </div>
             </div>
         </div>
-        <strong class="Add__title">Add:</strong>
-        <div class="add">
-            <input type="checkbox" name="Tomato">
-            <label class="g" for="pepper">pepper</label>
-            <input type="checkbox" name="sausages">
+        <strong class="Add__title" >Add:</strong>
+        <div class="addBox">
+            <input type="checkbox" name="pepper" class="add">
+            <label for="pepper">pepper</label>
+            <input type="checkbox" name="sausages" class="add">
             <label for="sausages">sausages</label>
         </div>
-        <button>Save</button>
+        <button id="btn">Save</button>
+    </div>
+    <div class="order">
+        <h1 class="order__title">order 1</h1>
+        <ul class="order__list">
+            <li id="order_name">Name: </li>
+            <li id="order_phone">Phone: </li>
+            <li id="order_email">Email: </li>
+        </ul>
+        <ul class="order__list" id="order-list">
+            <li id="thickness">Dough thickness: </li>
+            <li id="size-text">Size: </li>
+            <li>On Pizza: <span id="on-pizza"></span></li>
+            <li>Extra: <span id="add"></span></li>
+        </ul>
+        <span class="order__price">
+            TOTAL:
+            <h5 id="total">0$</h5>
+        </span>
     </div>
 
     <script src="./index.js"></script>
